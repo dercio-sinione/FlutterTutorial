@@ -15,7 +15,6 @@ class titleSection extends StatelessWidget {
             children: [
               Container(
                 padding: const EdgeInsets.only(bottom: 8),
-                color: Colors.red[500],
                 child: Text(
                   'Oeschinen Lake Campground',
                   style: TextStyle(fontWeight: FontWeight.bold),
