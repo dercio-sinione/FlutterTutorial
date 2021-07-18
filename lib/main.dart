@@ -12,22 +12,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Home',
         home: Scaffold(
-          appBar: AppBar(
-            title: Text("Flutter Tutorial"),
-          ),
-          body: Column(
-            children: [
-              Image.asset(
-                'images/lake.jpg',
-                width: 600,
-                height: 240,
-                fit: BoxFit.cover,
-              ),
-              TitleSection(),
-              ButtonSection(),
-              CustomTextSection(),
-            ],
-          ),
-        ));
+            appBar: AppBar(
+              title: Text("Flutter Tutorial"),
+            ),
+            body: ListView(
+              children: [
+                Image.asset(
+                  'images/lake.jpg',
+                  width: 600,
+                  height: 400,
+                  fit: BoxFit.cover,
+                ),
+                TitleSection(),
+                ButtonSection(),
+                CustomTextSection(),
+              ],
+            )));
   }
 }
