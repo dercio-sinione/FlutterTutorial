@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutterwidgets/textSection.dart';
 import 'package:flutterwidgets/titleSection.dart';
 import 'package:flutterwidgets/buttonSection.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
             children: [
               TitleSection(),
               ButtonSection(),
-              TextSection(),
+              CustomTextSection(),
             ],
           ),
         ));
