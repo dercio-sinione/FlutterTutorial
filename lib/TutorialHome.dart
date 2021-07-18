@@ -1,41 +1,35 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    title: 'Flutter Tutorial',
-    home: TutorialHome(),
-  ));
-}
+void main() => runApp(TotorialHome());
 
-class TutorialHome extends StatelessWidget {
+class TotorialHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // Scaffold is a layout for
-    // the major Material Components.
-    return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          tooltip: 'Navigation menu',
-          onPressed: null,
-        ),
-        title: Text('Example title'),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.search),
-            tooltip: 'Search',
+    return MaterialApp(
+      title: 'Flutter Tutorial',
+      home: Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
             onPressed: null,
+            icon: Icon(Icons.menu),
+            tooltip: 'Navigation Menu',
           ),
-        ],
-      ),
-      // body is the majority of the screen.
-      body: Center(
-        child: Text('Hello, world!'),
-      ),
-      floatingActionButton: FloatingActionButton(
-        tooltip: 'Add', // used by assistive technologies
-        child: Icon(Icons.add),
-        onPressed: null,
+          title: Text('Totorial'),
+          actions: [
+            IconButton(
+              onPressed: null,
+              icon: Icon(Icons.search),
+            )
+          ],
+        ),
+        body: Center(
+          child: Text('Hello World!!!'),
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: null,
+          tooltip: 'Add',
+          child: Icon(Icons.add),
+        ),
       ),
     );
   }
