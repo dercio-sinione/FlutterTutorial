@@ -17,6 +17,11 @@ class MyApp extends StatelessWidget {
           ),
           body: Column(
             children: [
+              Image.asset(
+                'images/lake.jpg',
+                width: 600,
+                height: 240,
+              ),
               TitleSection(),
               ButtonSection(),
               CustomTextSection(),
