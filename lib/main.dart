@@ -20,9 +20,10 @@ class MyApp extends StatelessWidget {
                 Image.asset(
                   'images/lake.jpg',
                   width: 600,
-                  height: 400,
+                  height: 240,
                   fit: BoxFit.cover,
                 ),
+                Image(image: AssetImage('images/lake.jpg')),
                 TitleSection(),
                 ButtonSection(),
                 CustomTextSection(),
