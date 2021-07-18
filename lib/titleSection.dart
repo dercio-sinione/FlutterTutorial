@@ -11,6 +11,7 @@ class titleSection extends StatelessWidget {
         children: [
           Expanded(
               child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 padding: const EdgeInsets.only(bottom: 8),
