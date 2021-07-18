@@ -6,7 +6,7 @@ class TotorialHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Tutorial',
+      title: 'Home',
       home: Scaffold(
         appBar: AppBar(
           leading: IconButton(
@@ -14,7 +14,7 @@ class TotorialHome extends StatelessWidget {
             icon: Icon(Icons.menu),
             tooltip: 'Navigation Menu',
           ),
-          title: Text('Totorial'),
+          title: Text('Flutter Totorial'),
           actions: [
             IconButton(
               onPressed: null,
