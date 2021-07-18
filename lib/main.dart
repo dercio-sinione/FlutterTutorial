@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutterwidgets/titleSection.dart';
+import 'package:flutterwidgets/buttonSection.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,7 +17,10 @@ class MyApp extends StatelessWidget {
             title: Text("Flutter Tutorial"),
           ),
           body: Column(
-            children: [titleSection()],
+            children: [
+              titleSection(),
+              ButtonSection(),
+            ],
           ),
         ));
   }
