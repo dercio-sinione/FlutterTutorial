@@ -3,16 +3,14 @@ import 'package:flutter/material.dart';
 class ButtonSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    Color color = Theme.of(context).primaryColor;
     return Container(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-          ElevatedButton(
-              onPressed: () => print('button1'), child: Text('button 1')),
-          ElevatedButton(
-              onPressed: () => print('button1'), child: Text('button 2')),
-          ElevatedButton(
-              onPressed: () => print('button1'), child: Text('button 3')),
+          _buildButtonColumn(color, Icons.call, 'CALL'),
+          _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
+          _buildButtonColumn(color, Icons.share, 'SHARE'),
         ],
       ),
     );
