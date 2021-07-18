@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
             children: [
               TitleSection(),
               ButtonSection(),
-              textSection,
+              TextSection(),
             ],
           ),
         ));

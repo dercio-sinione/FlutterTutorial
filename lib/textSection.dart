@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TextSection extends StatelessWidget {
-  const TextSection({Key? key}) : super(key: key);
+class CustomTextSection extends StatelessWidget {
+  const CustomTextSection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
