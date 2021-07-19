@@ -23,7 +23,6 @@ class MyApp extends StatelessWidget {
                   height: 240,
                   fit: BoxFit.cover,
                 ),
-                Image(image: AssetImage('images/lake.jpg')),
                 TitleSection(),
                 ButtonSection(),
                 CustomTextSection(),
